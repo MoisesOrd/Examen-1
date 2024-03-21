@@ -16,8 +16,8 @@ namespace GestionVistas.Empleado
     public partial class EmpleadoEditar : Form
     {
         int idx = 0;
-        Persona p = new Persona();
-        PersonaBss bss = new PersonaBss();
+        EmpleadoBss p = new EmpleadoBss();
+        EmpleadoBss bss = new EmpleadoBss();
         public EmpleadoEditar()
         {
             InitializeComponent();
@@ -28,9 +28,9 @@ namespace GestionVistas.Empleado
             InitializeComponent();
         }
 
-        private void PersonaEditarVista_Load(object sender, EventArgs e)
+        private void EmpleadoEditarVista_Load(object sender, EventArgs e)
         {
-            p = bss.ObtenerPersonaIdBss(idx);
+            p = bss.ObtenerEmpleadoIdBss(idx);
             textBox1.Text = p.Nombre;
             textBox2.Text = p.Apellido;
         }
@@ -38,7 +38,7 @@ namespace GestionVistas.Empleado
         {
             p.Nombre = textBox1.Text;
             p.Apellido = textBox2.Text;
-            bss.EditarPersonaBss(p);
+            bss.EditarEmpleadoBss(p);
             MessageBox.Show("Datos Actualizados");
         }
     }

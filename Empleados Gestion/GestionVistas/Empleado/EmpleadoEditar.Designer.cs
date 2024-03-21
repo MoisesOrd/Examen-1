@@ -36,6 +36,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -102,11 +104,29 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Salario";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(158, 322);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(250, 27);
+            this.dateTimePicker1.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 322);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Fecha de Ingreso";
+            // 
             // EmpleadoEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 415);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label3);
@@ -132,5 +152,7 @@
         private Label label3;
         private TextBox textBox4;
         private Label label4;
+        private DateTimePicker dateTimePicker1;
+        private Label label5;
     }
 }
