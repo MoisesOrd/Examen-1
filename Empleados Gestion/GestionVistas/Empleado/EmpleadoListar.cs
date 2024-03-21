@@ -17,10 +17,10 @@ namespace GestionVistas.Empleado
         {
             InitializeComponent();
         }
-        PersonaBss bss = new PersonaBss();
-        private void PersonaListarVista_Load(object sender, EventArgs e)
+        EmpleadoBss bss = new EmpleadoBss();
+        private void EmpleadoListar_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarPersonaBss();
+            dataGridView1.DataSource = ();
         }
 
 

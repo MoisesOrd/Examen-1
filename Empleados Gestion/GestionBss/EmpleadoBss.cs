@@ -19,7 +19,8 @@ namespace GestionBss
             {
                 return dal.ListarEmpleadoDal();
             }
-            public void InsertarUsuarioBss(Empleado empleado)
+
+            public void InsertarEmpleadoBss(Empleado empleado)
             {
                 dal.InsertarEmpleadoDal(empleado);
             }
